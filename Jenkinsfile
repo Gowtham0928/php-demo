@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         PROJECT_ID = "hari-chandu-anunay"
-        REGION     = "us-central1"
+        REGION     = "us-central1-a"
         REPO       = "php-demo"
         IMAGE_NAME = "kandula"
         TAG        = "v2"
