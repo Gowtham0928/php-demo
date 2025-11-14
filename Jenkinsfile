@@ -2,11 +2,11 @@ pipeline {
     agent any
 
     environment {
-        PROJECT_ID = "raghu2pm"
+        PROJECT_ID = "hari-chandu-anunay"
         REGION     = "us-central1"
-        REPO       = "php-app-repo"
-        IMAGE_NAME = "php-app"
-        TAG        = "latest"
+        REPO       = "php-demo"
+        IMAGE_NAME = "kandula"
+        TAG        = "v2"
     }
 
     stages {
@@ -15,7 +15,7 @@ pipeline {
             steps {
                 echo "Pulling code from GitHub..."
                 git(
-                    url: 'https://github.com/raghu-kadali/php-app.git',
+                    url: 'https://github.com/Gowtham0928/php-demo.git',
                     branch: 'main'
                 )
             }
